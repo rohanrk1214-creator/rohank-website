@@ -1,0 +1,101 @@
+body{
+    background:#0d0d0d;
+    color:white;
+    font-family:Arial,sans-serif;
+    margin:0;
+    text-align:center;
+}
+
+nav{
+    padding:20px;
+    background:#111;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.hero{
+    padding:60px 20px;
+}
+
+.hero img{
+    width:250px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#00A3FF;
+    padding:12px 20px;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#0085d1;
+}
+
+.about,
+.services,
+.portfolio,
+.contact{
+    padding:80px 20px;
+}
+
+h2{
+    color:#00A3FF;
+}
+
+.card{
+    background:#1a1a1a;
+    width:300px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.contact a{
+    color:#00A3FF;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    padding:20px;
+    background:#111;
+    margin-top:40px;
+}
