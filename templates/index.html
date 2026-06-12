@@ -5,94 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RK Edits</title>
-
-```
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-```
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-```
+<!-- NAVBAR -->
 <nav>
-    <a href="/">Home</a>
-    <a href="/services">Services</a>
-    <a href="/portfolio">Portfolio</a>
-    <a href="/contact">Contact</a>
+    <div class="logo">
+        <span class="rk">RK</span>
+        <span class="edits">EDITS</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
-<section class="hero">
-    <img src="{{ url_for('static', filename='image/rk-logo.png') }}" alt="RK Edits Logo">
+<!-- HERO SECTION -->
+<section id="home" class="hero">
 
-    <h1>RK Edits</h1>
+    <div class="hero-text">
+        <h3>WELCOME TO</h3>
 
-    <p>Professional Video & Photo Editing Services</p>
+        <h1>
+            <span class="rk">RK</span>
+            <span class="edits">EDITS</span>
+        </h1>
 
-    <a class="btn" href="/contact">Get Free Quote</a>
+        <h2>We Edit Your Memories</h2>
+
+        <p>
+            Professional Photo & Video Editing Studio
+            Creating Cinematic Visuals, Stunning Color Grades,
+            Creative Thumbnails and Social Media Content.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#portfolio" class="btn-blue">View Portfolio</a>
+            <a href="#contact" class="btn-gold">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='image/hero-camera.png') }}" alt="Editing Studio">
+    </div>
+
 </section>
 
-<section class="about">
+<!-- ABOUT -->
+<section id="about" class="about">
+
     <h2>About RK Edits</h2>
 
     <p>
-        RK Edits is a professional video and photo editing service based in Pune, Maharashtra, India.
-        We specialize in cinematic video editing, social media reels, YouTube content editing,
-        photo retouching, color grading and creative visual storytelling.
+        RK Edits is a creative Photo & Video Editing Studio focused on delivering
+        high-quality visual content. We specialize in cinematic photo editing,
+        professional color grading, YouTube thumbnail design, portrait photography,
+        nature photography and social media content creation.
     </p>
 
-    <h3>Owner: Rohan</h3>
-    <p>Pune, Maharashtra, India</p>
+    <p>
+        Every project is edited with creativity, precision and passion to create
+        visuals that stand out.
+    </p>
+
 </section>
 
-<section class="services">
+<!-- SERVICES -->
+<section id="services" class="services">
+
     <h2>Our Services</h2>
 
-    <div class="card">
-        <h3>Video Editing</h3>
-        <p>Professional YouTube, Reels and Cinematic Editing.</p>
+    <div class="service-container">
+
+        <div class="card">
+            <h3>🎬 Video Editing</h3>
+        </div>
+
+        <div class="card">
+            <h3>📸 Photo Editing</h3>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Color Grading</h3>
+        </div>
+
+        <div class="card">
+            <h3>🖼️ Thumbnail Design</h3>
+        </div>
+
+        <div class="card">
+            <h3>✨ Retouching</h3>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Photo Editing</h3>
-        <p>Retouching, Color Correction and Enhancement.</p>
-    </div>
-
-    <div class="card">
-        <h3>Thumbnail Design</h3>
-        <p>Eye-catching thumbnails for maximum engagement.</p>
-    </div>
 </section>
 
-<section class="portfolio">
-    <h2>Portfolio</h2>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+
+    <h2>Featured Portfolio</h2>
+
+    <h3>Portrait Photography</h3>
 
     <div class="gallery">
-    <img src="{{ url_for('static', filename='image/project1.png') }}" alt="Project 1">
-    <img src="{{ url_for('static', filename='image/project2.png') }}" alt="Project 2">
-    <img src="{{ url_for('static', filename='image/project3.png') }}" alt="Project 3">
-</div>
+        <img src="{{ url_for('static', filename='image/portrait1.png') }}" alt="Portrait 1">
+        <img src="{{ url_for('static', filename='image/portrait2.png') }}" alt="Portrait 2">
+        <img src="{{ url_for('static', filename='image/portrait3.png') }}" alt="Portrait 3">
+    </div>
 
-    <p>Professional Editing Projects by RK Edits</p>
+    <h3>Nature Photography</h3>
+
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='image/nature1.png') }}" alt="Nature 1">
+        <img src="{{ url_for('static', filename='image/nature2.png') }}" alt="Nature 2">
+    </div>
+
+    <h3>Thumbnail Design</h3>
+
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='image/thumb1.png') }}" alt="Thumbnail 1">
+        <img src="{{ url_for('static', filename='image/thumb2.png') }}" alt="Thumbnail 2">
+    </div>
+
 </section>
 
-<section class="contact">
+<!-- VIDEO SHOWCASE -->
+<section id="videos" class="videos">
+
+    <h2>Video Editing Showcase</h2>
+
+    <p>Cinematic Reels • YouTube Videos • Social Media Content</p>
+
+    <div class="video-placeholder">
+        Coming Soon...<br>
+        New editing projects will be added here.
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
     <h2>Contact RK Edits</h2>
 
     <p>Email: rohanrk1214@gmail.com</p>
 
-    <p>
-        <a href="https://www.instagram.com/therohanravi007" target="_blank">
-            Instagram
-        </a>
-    </p>
+    <a href="https://www.instagram.com/therohanravi007" target="_blank">
+        Instagram
+    </a>
 
-    <p>
-        <a href="https://youtube.com/@rohankuniverse" target="_blank">
-            YouTube
-        </a>
-    </p>
+    <br><br>
+
+    <a href="https://youtube.com/@rohankuniverse" target="_blank">
+        YouTube
+    </a>
+
 </section>
-```
+
+<!-- FOOTER -->
+<footer>
+    <h2>
+        <span class="rk">RK</span>
+        <span class="edits">EDITS</span>
+    </h2>
+
+    <p>Professional Photo & Video Editing Studio</p>
+</footer>
 
 </body>
 </html>
